@@ -1,0 +1,9 @@
+NÃO exportar imagens que não sejam SVG diretamente do figma.
+
+Quando criar um projeto, ir salvando as imagens no computador
+e depois colocar no figma.
+
+
+Apenas a parte [enredo-e-personagens] terá as imagens .png
+com baixa qualidade, por isso irei testar usar .svg 
+nessa parte em específico. 

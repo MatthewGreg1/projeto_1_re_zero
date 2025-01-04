@@ -1,0 +1,12 @@
+/* Index */
+@import "./css/index/header.css";
+@import "./css/index/apresentacao.css";
+@import "./css/index/enredo.css";
+
+/* utilidades */
+@import "./css/utilidades/componentes.css";
+@import "./css/utilidades/cores.css";
+@import "./css/utilidades/tipografia.css";
+
+/* Global */
+@import "./css/global/global.css";

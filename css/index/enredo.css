@@ -1,0 +1,66 @@
+.enredo {
+  margin-top: 120px;
+}
+
+.enredo-arco,
+.enredo-arco2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+
+.enredo-legenda {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.enredo-legenda span {
+  border-bottom: 2px solid var(--cor-2);
+}
+
+.enredo-arco2 .enredo-legenda span {
+  text-align: right;
+}
+
+.enredo-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.enredo-texto {
+  padding-top: 30px;
+}
+
+.enredo-area p {
+  position: relative;
+}
+
+.enredo-arco2 .enredo-texto {
+  justify-self: right;
+}
+
+.enredo-texto p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 8px;
+  background-color: var(--cor-p2);
+  top: -20px;
+}
+
+.enredo-lista {
+  display: flex;
+  gap: 130px;
+  align-items: end;
+  max-width: 600px;
+  overflow: auto;
+  padding-bottom: 12px;
+}
+
+@media (max-width: 1000px) {
+}
