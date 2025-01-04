@@ -12,6 +12,9 @@
 .enredo-legenda {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  max-width: 1390px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 20px;
   padding-bottom: 40px;
   align-items: center;
@@ -22,25 +25,21 @@
 }
 
 .enredo-arco2 .enredo-legenda span {
-  text-align: right;
 }
 
 .enredo-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 60px;
 }
 
 .enredo-texto {
   padding-top: 30px;
+  max-width: 55ch;
 }
 
-.enredo-area p {
+.enredo-texto p {
   position: relative;
-}
-
-.enredo-arco2 .enredo-texto {
-  justify-self: right;
 }
 
 .enredo-texto p::before {
@@ -63,4 +62,46 @@
 }
 
 @media (max-width: 1000px) {
+  .enredo {
+    margin-top: 100px;
+  }
+  .enredo-area {
+    gap: 40px;
+  }
+
+  .enredo-lista {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .enredo {
+    margin-top: 80px;
+  }
+
+  .enredo > h1 {
+    text-align: center;
+  }
+
+  .enredo-arco,
+  .enredo-arco2 {
+    padding-top: 40px;
+  }
+  .enredo-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .enredo-texto {
+    max-width: inherit;
+    padding-top: 20px;
+  }
+  .enredo-lista {
+    max-width: 600px;
+  }
+
+  .enredo-arco2 .enredo-texto {
+    grid-row: 1;
+    padding-bottom: 20px;
+  }
 }
