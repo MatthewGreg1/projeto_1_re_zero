@@ -1,0 +1,72 @@
+.novels-bg {
+  background-color: var(--cor-9);
+}
+
+.novels {
+  padding: 20px;
+}
+
+.novels p {
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+
+.novels-capas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 0 100px;
+  align-items: end;
+}
+
+.novel-usa,
+.novel-br {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 17px;
+}
+
+.novel-principal-usa img {
+  width: 285px;
+  height: 428px;
+}
+
+.novel-principal-br img {
+  width: 282px;
+  height: 376px;
+}
+
+.novel-secundaria-usa,
+.novel-secundaria-br {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px 0px;
+}
+
+.novel-secundaria-usa img,
+.novel-secundaria-br img {
+  opacity: 60%;
+}
+
+.novel-secundaria-usa img:hover,
+.novel-secundaria-br img:hover {
+  opacity: 100%;
+}
+.novel-secundaria-usa img {
+  width: 88px;
+  height: 130px;
+}
+
+.novel-secundaria-br img {
+  width: 84px;
+  height: 114px;
+}
+
+.novel-principal-usa::before {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 410px;
+  position: absolute;
+  background-image: url("./img/light-novels/novel-usa/altura-usa.svg");
+}
